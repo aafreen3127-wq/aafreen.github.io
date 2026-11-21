@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://127.0.0.1:5500/index.html#projects -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aafreen | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #09090d;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    position: sticky;
+    top: 0;
+    background: #09090dee;
+    z-index: 10;
+}
+
+.logo {
+    color: #c084fc;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #c084fc;
+}
+
+.home {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    position: relative;
+}
+
+.glow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #8b5cf6;
+    filter: blur(150px);
+    opacity: 0.25;
+    right: 10%;
+    top: 20%;
+}
+
+.home-content {
+    position: relative;
+    z-index: 1;
+}
+
+.tag {
+    color: #c084fc;
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+.home h1 {
+    font-size: clamp(42px, 7vw, 75px);
+    margin-top: 20px;
+}
+
+.home h1 span {
+    color: #c084fc;
+}
+
+.home h3 {
+    color: #b8b8c5;
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.home p {
+    color: #aaa;
+    margin-top: 20px;
+    line-height: 1.8;
+    max-width: 550px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 28px;
+    background: #c084fc;
+    color: #09090d;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 25px #c084fc66;
+}
+
+section {
+    padding: 90px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 45px;
+}
+
+.section-title span {
+    color: #c084fc;
+}
+
+.about-text {
+    max-width: 750px;
+    margin: auto;
+    color: #aaa;
+    line-height: 1.9;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #15151d;
+    border: 1px solid #292432;
+    padding: 30px;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #c084fc;
+    box-shadow: 0 0 20px #c084fc22;
+}
+
+.card h3 {
+    color: #c084fc;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #aaa;
+    line-height: 1.7;
+}
+
+.skill {
+    text-align: center;
+    font-size: 18px;
+}
+
+.skill .symbol {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    color: #aaa;
+    line-height: 1.8;
+}
+
+footer {
+    border-top: 1px solid #25232b;
+    text-align: center;
+    padding: 25px;
+    color: #777;
+}
+
+@media(max-width:600px) {
+    nav {
+        padding: 20px 5%;
+    }
+
+    nav a {
+        margin-left: 9px;
+        font-size: 11px;
+    }
+
+    .home {
+        padding: 60px 6%;
+    }
+
+    section {
+        padding: 65px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Aafreen.</div>
+    <div>
+        <a href="http://127.0.0.1:5500/index.html#home">Home</a>
+        <a href="http://127.0.0.1:5500/index.html#about">About</a>
+        <a href="http://127.0.0.1:5500/index.html#skills">Skills</a>
+        <a href="http://127.0.0.1:5500/index.html#projects">Projects</a>
+        <a href="http://127.0.0.1:5500/index.html#contact">Contact</a>
+    </div>
+</nav>
+
+<div class="home" id="home">
+    <div class="glow"></div>
+
+    <div class="home-content">
+        <div class="tag">WELCOME TO MY DIGITAL WORLD</div>
+
+        <h1>Hi, I'm <span>Aafreen</span></h1>
+
+        <h3>Future Software Engineer</h3>
+
+        <p>
+            A curious mind, a coding enthusiast and a dreamer.
+            I'm learning, creating and turning my ideas into reality
+            one line of code at a time.
+        </p>
+
+        <a href="http://127.0.0.1:5500/index.html#projects" class="btn">Explore My Work ↗</a>
+    </div>
+</div>
+
+<section id="about">
+    <h2 class="section-title">About <span>Me</span></h2>
+
+    <p class="about-text">
+        Hey! I'm Aafreen, a Computer Science student who loves
+        technology, creativity and learning new things.
+        I'm currently exploring Python, web development
+        and the world of programming.
+        My dream is to become a software engineer
+        and build things that make a difference.
+    </p>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">My <span>Skills</span></h2>
+
+    <div class="cards">
+
+        <div class="card skill">
+            <div class="symbol">🐍</div>
+            <h3>Python</h3>
+            <p>Learning programming logic and Python basics.</p>
+        </div>
+
+        <div class="card skill">
+            <div class="symbol">🌐</div>
+            <h3>HTML</h3>
+            <p>Creating the structure of websites.</p>
+        </div>
+
+        <div class="card skill">
+            <div class="symbol">🎨</div>
+            <h3>CSS</h3>
+            <p>Styling websites with layouts and design.</p>
+        </div>
+
+        <div class="card skill">
+            <div class="symbol">💡</div>
+            <h3>Problem Solving</h3>
+            <p>Learning to think logically and solve problems.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">My <span>Projects</span></h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Personal Portfolio</h3>
+            <p>
+                My own portfolio website built using HTML and CSS
+                to showcase my learning journey.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Python Projects</h3>
+            <p>
+                Small Python programs created while learning
+                programming fundamentals.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Future Projects</h3>
+            <p>
+                More creative ideas, coding experiments
+                and projects coming soon.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2 class="section-title">Let's <span>Connect</span></h2>
+
+    <p>
+        I'm learning, growing and building my future.<br>
+        This is only the beginning.
+    </p>
+
+    <a href="mailto:YOUR_EMAIL_HERE" class="btn">
+        Email Me ✉
+    </a>
+
+    <br><br>
+    <p>YOUR_EMAIL_HERE</p>
+
+    <a href="http://127.0.0.1:5500/index.html#home" class="btn">Back to Top ↑</a>
+</section>
+
+<footer>
+    © 2026 Aafreen | Made with ♡ and code
+</footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
